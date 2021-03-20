@@ -2,12 +2,12 @@ print("Welcome to Paaka Bank.")
 
 option = ''
 balance = 0
-while option != 'Q':
+while option != 'X':
     print("======================================")
     print("O. Open Account")
     print("D. Deposit")
     print("W. Withdrawal")
-    print("Q. Quit")
+    print("X. Exit")
     print("======================================")
     option = input("Please select Option : ")
 
@@ -19,7 +19,7 @@ while option != 'Q':
         amount = input("Please enter withdrawal amount : ")
         balance -= int(amount)
         print(f'Your current balance is : {balance}')
-    elif option == "Q":
+    elif option == "X":
         print("Good Bye")
     else:
         print("!!!! WRONG CHOICE !!!!")
